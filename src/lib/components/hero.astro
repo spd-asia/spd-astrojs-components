@@ -1,0 +1,39 @@
+---
+// Get the props
+const {
+    class: parentClass,
+    style: parentStyles,
+    rounded = false,
+    children,
+    ...otherProps
+} = Astro.props;
+
+// Initialize the class and styles arrays
+let classes = ["card"];
+let styles = [];
+
+// If parentClass prop is passed, add it to classes
+if (parentClass) {
+    classes.push(parentClass);
+}
+
+// If parentStyles prop is passed, add it to styles
+if (parentStyles) {
+    styles.push(parentStyles);
+}
+---
+
+<div
+    class:list={{ card: true, rounded, [parentClass]: parentClass }}
+    style={styles.join(' ')}
+    {...otherProps}
+>
+    <slot />
+</div>
+
+<style>
+    .rounded {
+        border-radius: 10px;
+        border: 3px solid black;
+    }
+</style>
