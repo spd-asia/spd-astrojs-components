@@ -1,0 +1,33 @@
+{
+  "name": "spd-astrojs-components",
+  "version": "0.1.0",
+  "description": "AstroJS components for SPD Asia",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "astro dev",
+    "build": "astro check && tsc --noEmit && astro build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "astrojs",
+    "components",
+    "web-components"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "ISC",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spd-asia/spd-astrojs-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/spd-asia/spd-astrojs-components/issues"
+  },
+  "homepage": "https://github.com/spd-asia/spd-astrojs-components#readme",
+  "dependencies": {
+    "astro": "^2.7.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
