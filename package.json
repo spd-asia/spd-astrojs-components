@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "AstroJS components for SPD Asia",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "start": "astro dev",
     "build": "astro check && tsc --noEmit && astro build",
@@ -14,7 +15,7 @@
     "web-components"
   ],
   "author": "Your Name <your.email@example.com>",
-  "license": "ISC",
+  "license": "MIT",
   "type": "module",
   "repository": {
     "type": "git",
